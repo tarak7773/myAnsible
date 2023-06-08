@@ -13,5 +13,16 @@
     service:
       name: apache2
       state: started
-    when: ansible_os_family =="Debian"
-   
+    when: ansible_os_family =="Debian" 
+
+
+  - name: i want to install webserver on RedHat nodes 
+    ansible.builtin.dnf:
+       name: httpd
+       state: present 
+    when: ansible_os_family =="RedHat"
+  - name: i want to start webserver on RedHat nodes 
+    service: 
+       name: httpd 
+       state: started 
+    when: ansible_os_family =="RedHat"
