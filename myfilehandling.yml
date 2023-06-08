@@ -7,3 +7,7 @@
     apt: 
       name: apache2 
       
+  - name: copy index file into node side 
+    copy: 
+      src: myindexfile
+      dest: /var/www/html/index.html
