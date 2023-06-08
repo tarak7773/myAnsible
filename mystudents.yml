@@ -1,0 +1,23 @@
+---
+- mystudents:
+  - name: anil
+    phno: 9398674634
+    address: 
+       doorno: 1234
+       street: 1st
+       pincode: 521325
+
+
+  - name: rajesh
+    phno: 6303839052
+    address: 
+       doorno: 2345
+       street: 2nd
+       pincode: 521325
+
+  - name: vuddandu
+    phno: 9553061715
+    address:
+       doorno: 3456
+       street: 3rd
+       pincode: 521325
