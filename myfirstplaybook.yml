@@ -1,5 +1,6 @@
 ---
 - hosts: all
+  become: yes
   tasks: 
   - name: i want to install webserver on nodes
     apt: 
@@ -10,3 +11,8 @@
     apt:
       name: tree 
       state: present
+
+  - name: i want to install wget 
+    apt: 
+       name: wget 
+       state: present
