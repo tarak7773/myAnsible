@@ -1,0 +1,7 @@
+---
+- hosts: 172.31.13.243 
+  become: yes 
+  tasks: 
+  - name: execute linux command by using playbook 
+    command: hostname -f
+    
